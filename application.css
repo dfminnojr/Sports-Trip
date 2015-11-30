@@ -1,0 +1,233 @@
+html{ 
+  height: 100% 
+}
+body{ 
+  height: 98%; margin: 0;  background-color: white; 
+}
+#map-canvas { 
+  height: 97.5%; 
+  width:68%; 
+  bottom: 0;
+  margin:0;
+  position:fixed;
+  top: 5%; 
+  left: 0px;
+  border-right: 1px solid blue;
+}
+
+#infowindow {
+  background-color: skyblue;
+  padding: 10px;
+  margin:0px;
+  border: 1px solid black;
+  border:1px solid black;
+  font-family: arial;
+  font-size: 12px;
+}
+
+#page_title{
+  position:absolute; 
+  width:30%; 
+  right:1%; 
+  top: 2%;
+  min-width: 30%;
+  overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+#page_title a:link {
+  text-decoration: none;
+}
+
+#nav_bar {
+  background-color: red; 
+  color:white; 
+  position: fixed; 
+  top: 0; 
+  border-top: 1px solid blue; 
+  border-bottom: 1px solid blue;
+  border-right: 1px solid blue;
+  width: 68%; 
+  height: 25px;
+  margin:0;
+  padding:0;
+}
+
+#navbar_list {
+  margin: 0;
+  padding-left:0.5%;
+  left:0;
+  padding-top: 1px;
+}
+
+.nav_logo {
+  margin-top: 3px;
+  margin-right: 8%;
+
+}
+
+#navbar_list li {
+  list-style-type: none;
+  display:inline-block;
+  float:left;
+  margin-left: 1%;
+}
+
+#navbar_list li a:link {
+  text-decoration: none;
+}
+
+.start_address {
+  font-family: helvetica;
+  font-size:14px;
+  color:black;
+  text-shadow: 1px 0px 0px grey;
+}
+
+.nfl_team {
+  font-family: helvetica;
+  font-size:14px;
+  color:black;
+  text-shadow: 1px 0px 0px grey;
+  margin-top: 1px;
+}
+
+.find_thing {
+  font-family: helvetica;
+  font-size:14px;
+  color:black;
+  text-shadow: 1px 0px 0px grey;
+  margin-top: 1px;
+}
+
+#go-button {
+  border: 1px solid grey;
+  background-color: blue;
+  color:white;
+  border-radius: 5px;
+  font-family: helvetica;
+  font-size: 12px;
+  font-weight: bold;
+  top: 0;
+  margin-top: 1px;
+  margin-right: 1%;
+  margin-left: 5px;
+  margin-bottom: 2px;
+
+}
+
+#go-button:hover {
+  font-weight: bolder;
+  background-color: white;
+  color:skyblue;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+}
+
+#title_sports {
+  font-size:100px; 
+  font-family: freshman; 
+  color: red; 
+  text-shadow: 2px 2px 2px #2E64FE;
+}
+
+#title_trip {
+  font-size:100px; 
+  font-family: freshman; 
+  color: blue; 
+  text-shadow: 2px 2px 2px #FA5858;
+}
+
+#select_sport {
+  width:100%;
+  position:fixed;
+  top: 27%;
+}
+#select_sport_font{
+  font-size: 30px; 
+  font-family: freshman;
+}
+
+#directionsPanel{
+  background-color: white; 
+  position:absolute; 
+  right:0%; 
+  bottom:1%; 
+  width:30%; 
+  height: 84%; 
+  margin-left: 7px; 
+  margin-right:7px; 
+  padding-right:5px; 
+  padding-left:5px; 
+  border: 1px solid blue; 
+  overflow-y: scroll; 
+  box-shadow: 1px 1px 1px 1px;
+}
+
+#sports_font_direct{
+  font-size:48px; 
+  font-family: freshman; 
+  color: red; 
+  text-shadow: 2px 2px 2px #2E64FE;
+}
+
+#trip_font_direct{
+  font-size:48px; 
+  font-family: freshman; 
+  color: blue; 
+  text-shadow: 2px 2px 2px #FA5858;
+}
+
+#sports_font_small{
+  font-size:16px; 
+  font-family: freshman; 
+  color: white; 
+  text-shadow: 2px 2px 2px #2E64FE;
+}
+
+#trip_font_small{
+  font-size:16px; 
+  font-family: freshman;
+  color: blue; 
+  text-shadow: 2px 2px 2px #FA5858;
+}
+
+.sports_div{
+  margin:0 auto;
+ text-align:center;
+  width:800px;
+}
+
+#sports_logos li{
+  display:inline;
+ list-style-type:none;
+}
+
+#soon_div a{
+  color:blue;
+}
+
+#soon_div a:hover{
+  color:red;
+}
+
+.coming_soon_one{
+  font-size:100px; 
+  font-family: freshman; 
+  color: red; 
+  text-shadow: 2px 2px 2px #2E64FE;
+}
+
+.coming_soon_two{
+  font-size:100px; 
+  font-family: freshman; 
+  color: blue; 
+  text-shadow: 2px 2px 2px skyblue; 
+  text-shadow: 2px 2px 2px #FA5858;
+}
+
+#title {
+  width:100%; 
+  position: fixed; 
+  top: 4%;
+}

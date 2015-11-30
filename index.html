@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+     <link rel="shortcut icon" href="football.ico"/>
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 5px; background-color: white; }
+      #map-canvas { height: 97%; width:68%; }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX03UKxY1B7v7oSyDbAHEHDQPsHSjyo1Y&libraries=places&sensor=true">
+    </script>
+    <script src="script.js"></script>
+  </head>
+  
+  <body>
+    <div id="directionsPanel" style="background-color: white; position:absolute; right:0%; bottom:2%; width:30%; height: 82%; margin-left: 7px; margin-right:7px; padding-right:5px; padding-left:5px; border: 1px solid blue; overflow-y: scroll; box-shadow: 1px 1px 1px 1px;"><center><strong><u>Directions List</u></strong></center></div>
+
+    <div id="page_title" style="position:absolute; width:30%; right:1%; top: 2%;"><center> <a href="/"><font style="font-size:65px; font-family: freshman; color: red; text-shadow: 2px 2px 2px #2E64FE;">Sports</font><font style="font-size:65px; font-family: freshman; color: blue; text-shadow: 2px 2px 2px skyblue; text-shadow: 2px 2px 2px #FA5858;">Trip</font></a></center> </div>
+
+    <div id="map-canvas" style="border:1px solid blue; bottom: 0%;margin-bottom: 0px;position:fixed;"></div>
+
+    <div style="background-color: red; color:white; padding: 5px; padding-left: 10px; position: absolute; bottom: 1.5%; left: 5px; border: 1px solid blue;">
+      <strong style="padding-left:2px; color:black; font-family: Arial; ">Start Address: </strong>
+      <br>
+      <form>
+        <input id="start" type="text" name="address">
+        <strong>Find: </strong>
+        <select id="thing" onchange="clearThings(); chooseThing();">
+          <option value=" ">Select</option>
+          <option value="hotel">Hotel</option>
+          <option value="pub">Bar</option>
+          <option value="grill">Grill</option>
+          <option value="pizza">Pizza</option>
+          <option value="sushi">Sushi</option>
+        </select>
+      </form>
+      <font style=" padding-left:2px; font-family:freshman; color: blue;text-shadow: 1px 1px 1px white;"> NFL Team</font>:
+      <select id="stadium">
+        <option value=" ">Select</option>
+        <option value="40.446674, -80.015702">Steelers</option>
+        <option value="41.5060, -81.6996">Browns</option>
+        <option value="39.2780, -76.6228">Ravens</option>
+        <option value="37.7514, -122.2009">Raiders</option>
+        <option value="39.0954, -84.5160">Bengals</option>
+        <option value="38.907729, -76.864433">Redskins</option>
+        <option value="40.814209, -74.073690">NY Giants</option>
+        <option value="40.814209, -74.073690">NY Jets</option>
+        <option value="44.501239, -88.062238">Packers</option>
+        <option value="32.747914, -97.093477">Cowboys</option>
+        <option value="39.048203, -94.485012">Chiefs</option>
+        <option value="39.743744, -105.023299">Broncos</option>
+        <option value="25.957629, -80.238562">Dolphins</option>
+        <option value="35.225629, -80.852740">Panthers</option>
+        <option value="29.951262, -90.081393">Saints</option>
+        <option value="42.771286, -78.788236">Bills</option>
+        <option value="47.596704, -122.332085">Seahawks</option>
+        <option value="38.630780, -90.191503">Rams</option>
+        <option value="42.338484, -83.045934">Lions</option>
+        <option value="33.757811, -84.401217">Falcons</option>
+        <option value="42.093324, -71.262341">Patriots</option>
+        <option value="39.900732, -75.167534">Eagles</option>
+        <option value="36.166208, -86.771413">Titans</option>
+        <option value="39.759708, -86.164645">Colts</option>
+        <option value="32.784021, -117.120029">Chargers</option>
+        <option value="27.976394, -82.504199">Bucs</option>
+        <option value="41.863227, -87.617558">Bears</option>
+        <option value="33.527308, -112.262258">Cardinals</option>
+        <option value="30.324877, -81.635735">Jaguars</option>
+        <option value="37.402032, -121.968523">49ers</option>   
+      </select>
+      <button onclick="calcRoute(); chooseThing();">Go!</button>
+    </div>
+  </body>
+</html>
